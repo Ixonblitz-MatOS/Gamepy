@@ -26,3 +26,4 @@ class Camera(object):
         self.update()
     def update(self):
         for i in self.settings:
+            self.world.objUpdate(self.name,)
