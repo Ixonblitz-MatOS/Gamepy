@@ -1,0 +1,2 @@
+global INFINITE
+INFINITE=-1
