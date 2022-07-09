@@ -1,0 +1,1 @@
+class Character(object):pass

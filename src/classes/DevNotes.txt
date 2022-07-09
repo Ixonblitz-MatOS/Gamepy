@@ -1,0 +1,2 @@
+Classes must have .name attribute in self for world to append dict
+classes must derive from object builtin
