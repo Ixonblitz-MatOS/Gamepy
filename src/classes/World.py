@@ -3,9 +3,9 @@ from Character import Character
 from Camera import Camera
 from exceptions import exc
 class World:
-    def __init__(self,dimension:int,size:t[float],player:Character=None,mainCamera:Camera=None):
-        if dimension==-1:self.dimension="INFINITE"
-        elif dimension >3: exc.raiseWorld("Dimension must be 3 or 2")
+    def __init__(self,dimension:int,size:t[float],player:Character=None,mainCamera:Camera=None,Infinite:bool=False):
+        self.infinite=Infinite
+        if dimension >3: exc.raiseWorld("Dimension must be 3 or 2")
 
         else:self.dimension = dimension
         if(len(size)>3 or len(size)!=dimension):exc.raiseWorld("Size must match dimension and be withing 2 or 3")
